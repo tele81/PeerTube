@@ -1,9 +1,9 @@
 <div class="row" myInfiniteScroller [autoInit]="true" (nearOfBottom)="onNearOfBottom()" [dataObservable]="onDataSubject.asObservable()">
-  <h1 class="sr-only" i18n>Follows</h1>
+  <h1 class="sr-only" i18n>Folgen diesen Server</h1>
   <div class="col-xl-6 col-md-12">
-    <h2 i18n class="subtitle">Followers instances</h2>
+    <h2 i18n class="subtitle">Verbundserver</h2>
 
-    <div i18n class="no-results" *ngIf="followersPagination.totalItems === 0">This instance does not have instances followers.</div>
+    <div i18n class="no-results" *ngIf="followersPagination.totalItems === 0">Dieser Server teilt derzeit keine Inhalte mit dem Verbundsystem.</div>
 
     <a *ngFor="let follower of followers" [href]="buildLink(follower)" target="_blank" rel="noopener noreferrer">
       {{ follower }}
@@ -11,9 +11,9 @@
   </div>
 
   <div class="col-xl-6 col-md-12">
-    <h2 i18n class="subtitle">Followings instances</h2>
+    <h2 i18n class="subtitle">Dieser Server folgt</h2>
 
-    <div i18n class="no-results" *ngIf="followingsPagination.totalItems === 0">This instance does not have instances followings.</div>
+    <div i18n class="no-results" *ngIf="followingsPagination.totalItems === 0">Dieser Server bezieht derzeit keine Inhalte aus dem Verbundsystem.</div>
 
     <a *ngFor="let following of followings" [href]="buildLink(following)" target="_blank" rel="noopener noreferrer">
       {{ following }}
