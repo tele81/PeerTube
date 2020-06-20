@@ -1831,7 +1831,7 @@ Hilf mit PeerTube zu übersetzen!</target>
       </trans-unit>
       <trans-unit id="004b222ff9ef9dd4771b777950ca1d0e4cd4348a">
         <source>About</source>
-        <target>Info</target>
+        <target>Info / Rechtliches</target>
         <context-group name="null">
           <context context-type="linenumber">26</context>
         </context-group>
